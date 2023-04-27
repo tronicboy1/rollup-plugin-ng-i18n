@@ -1,5 +1,5 @@
 import { NormalizedOutputOptions, OutputBundle, Plugin } from 'rollup';
-import glob from 'glob';
+import { sync } from 'glob';
 
 import {
   ConsoleLogger,
@@ -47,7 +47,7 @@ export function ngi18n(options: Options): Plugin {
     name: 'custom-plugin',
     writeBundle(outputOptions: NormalizedOutputOptions, bundle: OutputBundle) {
       const rootPath = outputOptions.dir!;
-      const sourceFilePaths = glob.sync('**/*.js', { cwd: rootPath, nodir: true });
+      const sourceFilePaths = sync('**/*.js', { cwd: rootPath, nodir: true });
       const fileSystem = new NodeJSFileSystem();
       setFileSystem(fileSystem);
 
