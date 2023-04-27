@@ -2,7 +2,7 @@
 
 This is a plugin for Vite/Rollup allowing you to use the Angular Localize i18n package (@angular/localize) in Vite/Rollup.
 
-The `@angular/localize` package is unique from many i18n solutions in that it focuses on provided different compilations for each target language. This allows us to improve app performance and reduce the hassle associated with i18n.
+The `@angular/localize` package is unique from many i18n solutions in that it focuses on providing different compilations for each target language. This allows us to improve app performance and reduce the hassle associated with i18n.
 
 # Usage
 
@@ -47,16 +47,6 @@ import { ngi18n } from 'rollup-plugin-ng-i18n';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    outDir: './build',
-    lib: {
-      entry: ['src/index.ts'],
-      formats: ['es'],
-    },
-    rollupOptions: {
-      external: [/^lit/, 'rxjs'],
-    },
-  },
   plugins: [
     ngi18n({
       extract: { localeOutput: 'messages.json', format: 'json' },
@@ -102,16 +92,6 @@ import { ngi18n } from 'rollup-plugin-ng-i18n';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    outDir: './build',
-    lib: {
-      entry: ['src/index.ts'],
-      formats: ['es'],
-    },
-    rollupOptions: {
-      external: [/^lit/, 'rxjs'],
-    },
-  },
   plugins: [
     ngi18n({
       translate: {

@@ -28,6 +28,10 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/babel__core": "^7.20.0",
+    "@types/babel__generator": "^7.6.4",
+    "@types/babel__template": "^7.4.1",
+    "@types/babel__traverse": "^7.18.5",
     "@types/glob": "^8.1.0",
     "@types/node": "^18.16.1",
     "@types/rollup": "^0.54.0",
