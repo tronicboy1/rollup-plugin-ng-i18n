@@ -10,8 +10,19 @@
     "./README.md"
   ],
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/tronicboy1/rollup-plugin-ng-i18n"
   },
+  "keywords": [
+    "frontend",
+    "build-tool",
+    "vite",
+    "i18n",
+    "localization",
+    "localisation",
+    "rollup",
+    "plugin"
+  ],
   "description": "A plugin for Rollup that allows you to use the $localize global constant built by the Angular team in any vite/rollup build setting to localize builds.",
   "author": "Austin J. Mayer",
   "license": "MIT",
