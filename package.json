@@ -31,16 +31,15 @@
     "@types/glob": "^8.1.0",
     "@types/node": "^18.16.1",
     "@types/rollup": "^0.54.0",
-    "copyfiles": "^2.4.1",
     "esbuild": "^0.17.18",
-    "glob": "^10.2.2",
     "rollup": "^3.21.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "@angular/compiler": "^15.2.8",
     "@angular/compiler-cli": "^15.2.8",
-    "@angular/localize": "^15.2.8"
+    "@angular/localize": "^15.2.8",
+    "glob": "^10.2.2"
   },
   "scripts": {
     "build": "node esbuild.js && tsc"
