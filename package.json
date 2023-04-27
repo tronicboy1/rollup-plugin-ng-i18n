@@ -1,0 +1,37 @@
+{
+  "name": "rollup-plugin-ng-i18n",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "types": "./types/index.d.ts",
+  "type": "module",
+  "files": [
+    "lib",
+    "types",
+    "./README.md"
+  ],
+  "repository": {
+    "type": "git"
+  },
+  "description": "A plugin for Rollup that allows you to use the $localize global constant built by the Angular team in any vite/rollup build setting to localize builds.",
+  "author": "Austin J. Mayer",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^18.16.1",
+    "@types/rollup": "^0.54.0",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.17.18",
+    "glob": "^10.2.2",
+    "rollup": "^3.21.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@angular/compiler": "^15.2.8",
+    "@angular/compiler-cli": "^15.2.8",
+    "@angular/localize": "^15.2.8"
+  },
+  "scripts": {
+    "build": "node esbuild.js && tsc"
+  }
+}
